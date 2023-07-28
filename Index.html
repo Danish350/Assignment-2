@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Vote" content="The Hollywood top Actors that you want to vote for!, initial-scale=1.0">
+    <title>Top Four Hollywood Actors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    button{
+         margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Hollywood Actors</h1>
+    <h2>Leonardo Dicaprio</h2>
+    <p>Few actors in the world have had a career quite as<span style="color:red">diverse as Leonardo DiCaprio's</span>. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom Growing Pains (1985) and low budget horror movies, such as Critters 3 (1991), to a major teenage heartthrob in the 1990s,...</p>
+    <h2>Tom Cruise</h2>
+    <p>In 1976, if you had told fourteen-year-old Franciscan seminary student<span style="color:red">Thomas Cruise Mapother IV that one day in the not too distant future he would be Tom Cruise</span>, one of the top 100 movie stars of all time, he would have probably grinned and told you that his ambition was to join the priesthood.</p>
+    <h2>Will Smith</h2>
+    <p>Willard Carroll<span style="color:red">"Will" Smith II (born September 25, 1968) is an American actor</span>, comedian, producer, rapper, and songwriter. He has enjoyed success in television, film, and music. In April 2007, Newsweek called him "the most powerful actor in Hollywood". Smith has been nominated for five Golden </p>
+    <h2>Chris Hemsworth</h2>
+    <p>Hemsworth started his career by appearing in several television series. In 2002, Hemsworth starred in two episodes of fantasy television series Guinevere Jones as King Arthur, as well as making an appearance in soap opera series Neighbours and one episode of Marshall Law. The following year, he appeared in an episode of The Saddle Club. In 2004, Hemsworth auditioned for the role of Robbie Hunter in Australian soap opera Home and Away. He did not receive the part, but was subsequently recalled for the part of Kim Hyde. He moved to Sydney to join the cast, appearing in 171 episodes of the series.[11] He left the cast of Home and Away on 3 July 2007. Hemsworth later remarked that although he became more visible after Home and Away, his work on a soap opera did not earn him respect within the film industry.</p>
+    <br>
+    <style>
+            th{
+                padding-right: 100px;
+            }
+        </style>
+       
+        <!-- List -->
+    <ul>
+        <li>Tom Cruise</li>
+        <li>Will Smith</li>
+        <li>Leonardo Dicaprio</li>
+        <li>Chris Hemsworth</li>
+        
+
+    </ul>
+    <br>
+    <!-- Table -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Actors</th>
+                <th>Hit Movie</th>
+                <th>Year of release</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tom Cruise</td>
+                <td>Top Gun</td>
+                <td>1986</td>
+
+            </tr>
+
+            <tr>
+                <td>Will Smith</td>
+                <td>The Persuite of Happiness</td>
+                <td>2006</td>
+
+            </tr>
+
+            <tr>
+                <td>Leonaardo Dicaprio</td>
+                <td>Titanic</td>
+                <td>1997</td>
+
+            </tr>
+            <tr>
+                <td>Chriss Hemsworth</td>
+                <td>The Avengers</td>
+                <td>2012</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <a href="Images//image.jpg" target="_blank">
+    <img src="Images/image.jpg" alt="Sunset" width="300px" height="200px">
+    </a>
+    <hr>
+    <h2>Let's vote for your favourite one!</h2>
+
+    <!-- Form -->
+
+    <form action="process.php" method="Post">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="first Name">
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="last name">
+        </div>
+        <br>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" value="40">
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Choose your favourite one here</label>
+            <select name="choose your favourite one here">
+                <option value="Tom Cruise">Tom Cruise</option>
+                <option value="Will Smith">Will Smith</option>
+                <option value="Leonardo Dicaprio">Leonardo Dicaprio</option>
+                <option value="Chris Hemsworth">Chris Hemsworth</option>
+                
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Tom Cruise</label>
+            <input type="checkbox" name="checkbox">
+        </div>
+        <div>
+            <label>Will Smith</label>
+            <input type="checkbox" name="checkbox">
+        </div>
+        <div>
+            <label>Leonardo Dicaprio</label>
+            <input type="checkbox" name="checkbox">
+        </div>
+        <div>
+            <label>Chris Hemsworth</label>
+            <input type="checkbox" name="checkbox">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>Tom Cruise</label>
+            <input type="radio" name="radio">
+        </div>
+        <div>
+            <label>Will Smith</label>
+            <input type="radio" name="radio">
+        </div>
+        <div>
+            <label>Leonardo Dicaprio</label>
+            <input type="radio" name="radio">
+        </div>
+        <div>
+            <label>Chris Hemsworth</label>
+            <input type="radio" name="radio">
+        </div>
+        <br>
+        <button class="btn btn-primary" id="myBtn" type="submit">submit</button>
+        <br>
+        <br>
+        
+        <button onclick="displayActors()" type="button" class="btn btn-info">Click to see the popularity by %</button>
+        
+    <div id="output"></div>
+    <script>
+        function displayActors() {
+            var actorsByName = ['Tom Cruise - 80%', 'Will Smith - 75%', 'Leonardo Dicaprio - 70%', 'Chris Hemsworth - 65%'];
+            var outputElement = document.getElementById('output');
+            if (outputElement.style.display === 'none') {
+                outputElement.innerHTML = "";
+                for (var i = 0; i < actorsByName.length; i++) {
+                    var actorsByNameDiv = document.createElement('div');
+                    actorsByNameDiv.textContent = actorsByName[i];
+                    outputElement.appendChild(actorsByNameDiv);
+                }
+                outputElement.style.display = 'block';
+            } else {
+                outputElement.style.display = 'none';
+            }
+        }
+    </script>
+    
+        
+    <div style="margin-top: 300px"></div>
+    <script src="main.js"></script>
+</body>
+</html>
